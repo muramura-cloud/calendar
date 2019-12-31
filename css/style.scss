@@ -1,0 +1,60 @@
+@charset 'UTF-8';
+
+body {
+  background-color: #222;
+}
+
+.container {
+  padding-top: 15px;
+}
+
+.now {
+  font-weight: bold;
+  font-size: 64px;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.monthLabel {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.table {
+  border-collapse: separate;
+  .week-head {
+    .day-of-the-week {
+      border-top: none;
+      color: white;
+      background-color: tomato;
+      border-right: 1px solid #dee2e6;
+      border-left: 1px solid #dee2e6;
+    }
+  }
+  .week {
+    td {
+      border: 1px solid #dee2e6;
+      cursor: pointer;
+      transition: .3s;
+      &.today {
+        position: relative;
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 12px;
+          content: '(今日)';
+        }
+      }
+      &:hover,&.today {
+        background-color: #222;
+        color: white;
+      }
+    }
+  }
+}
+

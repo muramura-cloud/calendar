@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>カレンダー</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <div id="container" class="container">
+    <div id="now" class="now"></div>
+    <p id="monthLabel" class="monthLabel"></p>
+    <table id="table" class="table text-center">
+      <tbody id="tbody"></tbody>
+    </table>
+    <form class="d-flex justify-content-between">
+      <button id="prev">先月</button>
+      <div class="select-box">
+        <select name="selectMonth" id="selectMonth">
+          <option value="1">1月</option>
+          <option value="2">２月</option>
+          <option value="3">３月</option>
+          <option value="4">４月</option>
+          <option value="5">５月</option>
+          <option value="6">６月</option>
+          <option value="7">７月</option>
+          <option value="8">８月</option>
+          <option value="9">９月</option>
+          <option value="10">１０月</option>
+          <option value="11">１１月</option>
+          <option value="12">１２月</option>
+        </select>
+        <input id="selectBtn" type="button" value="決定">
+      </div>
+      <button id="next">来月</button>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
