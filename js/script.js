@@ -210,13 +210,13 @@
           }
           const banquetReservationResult=document.createElement('li');
           if(data===null) {
-            banquetReservationResult.textContent='一般予約人数 : ? 人';
+            banquetReservationResult.textContent='宴会予約人数 : ? 人';
           }else {
             banquetReservationResult.textContent='宴会予約人数 : '+data.banquet+'人';
           }
           const laborResult=document.createElement('li');
           if(data===null) {
-            laborResult.textContent='一般予約人数 : ? 人';
+            laborResult.textContent='シフト人数 : ? 人';
           }else {
             laborResult.textContent='シフト人数 : '+data.labor+'人';
           }
