@@ -16,8 +16,8 @@
       <tbody id="tbody"></tbody>
     </table>
     <form class="d-flex justify-content-between">
-      <button id="prev">先月</button>
-      <div class="select-box">
+      <div id="prev">先月</div>
+      <div class="select-box d-flex">
         <select name="selectMonth" id="selectMonth">
           <option value="1">1月</option>
           <option value="2">２月</option>
@@ -32,10 +32,11 @@
           <option value="11">１１月</option>
           <option value="12">１２月</option>
         </select>
-        <input id="selectBtn" type="button" value="決定">
+        <div id="selectBtn" class="ml-1">決定</div>
       </div>
-      <button id="next">来月</button>
+      <div id="next">来月</div>
     </form>
+    <ul id="thumbnails" class="d-flex justify-content-between flex-wrap"></ul>
   </div>
   <script src="js/script.js"></script>
 </body>
